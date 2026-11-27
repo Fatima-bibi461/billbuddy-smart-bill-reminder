@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Core Brand & Surface Colors -->
+    <color name="navy_primary">#0F294A</color>
+    <color name="navy_dark">#091B33</color>
+    <color name="navy_muted">#5C6F87</color>
+    <color name="bg_screen">#F7F9FC</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="border_subtle">#E6ECF2</color>
+
+    <!-- Soft Icon & Pill Tints -->
+    <color name="tint_blue_soft">#EDF3FA</color>
+    <color name="tint_red_soft">#FDECEC</color>
+    <color name="tint_amber_soft">#FDF5E6</color>
+    <color name="tint_green_soft">#E8F7EE</color>
+
+    <!-- Status Text & Accents -->
+    <color name="status_red_text">#C63A3A</color>
+    <color name="status_amber_text">#B87A14</color>
+    <color name="status_green_text">#1E8E4E</color>
+
+    <!-- Standard Base -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

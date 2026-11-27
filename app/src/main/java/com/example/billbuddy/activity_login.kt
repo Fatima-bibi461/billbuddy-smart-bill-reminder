@@ -48,15 +48,18 @@ class LoginActivity : AppCompatActivity() {
             }
 
             // 1. Save data in SharedPreferences
-            val editor = sharedPref.edit()
-            editor.putString("email", email)
-            editor.putString("password", password)
-            editor.apply()
+            sharedPref.edit().apply {
+                putString("email", email)
+                putString("password", password)
+                apply()
+            }
 
-            Toast.makeText(this, "Data saved, opening MainActivity", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Login successful, opening Dashboard", Toast.LENGTH_SHORT).show()
 
-            // 2. Open MainActivity
-            val intent = Intent(this, MainActivity::class.java)
+            // 2. Open DashboardActivity
+            val intent = Intent(this, DashboardActivity::class.java).apply {
+                putExtra("user_email", email)
+            }
             startActivity(intent)
             finish()
         }
@@ -71,9 +74,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnClear.setOnClickListener {
-            val editor = sharedPref.edit()
-            editor.clear()
-            editor.apply()
+            sharedPref.edit().clear().apply()
 
             etEmail.setText("")
             etPassword.setText("")

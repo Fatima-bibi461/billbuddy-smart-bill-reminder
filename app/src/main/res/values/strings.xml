@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Bill Buddy</string>
+    <string name="edit_bill">Edit Bill</string>
+    <string name="mark_as_paid">Mark as Paid</string>
+    <string name="share_bill">Share Bill</string>
+    <string name="delete_bill">Delete Bill</string>
+    <string name="refresh">Refresh</string>
+    <string name="test_due_reminder">Test Due Reminder</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
 </resources>
